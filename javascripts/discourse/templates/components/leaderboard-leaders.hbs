@@ -6,11 +6,11 @@
   {{#each leaderboardLeaders as |item|}}
     <div class="leaderboard-leaders--user">
       <span
-        data-user-card={{item.user.username}}
+        data-user-card={{item.username}}
         class="leaderboard-leaders--user-badge"
       >
-        {{avatar item.user imageSize="small"}}
-        {{html-safe item.user.username}}
+        {{avatar item imageSize="small"}}
+        {{html-safe item.username}}
       </span>
       <span class="leaderboard-leaders--user-cheers">
         {{d-icon "award"}}
