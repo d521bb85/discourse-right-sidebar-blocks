@@ -1,0 +1,25 @@
+<h3 class="leaderboard-leaders-heading">
+  {{theme-i18n "leaderboard_leaders.heading"}}
+</h3>
+
+<div class="leaderboard-leaders--container">
+  {{#each leaderboardLeaders as |item|}}
+    <div class="leaderboard-leaders--user">
+      <span
+        data-user-card={{item.user.username}}
+        class="leaderboard-leaders--user-badge"
+      >
+        {{avatar item.user imageSize="small"}}
+        {{html-safe item.user.username}}
+      </span>
+      <span class="leaderboard-leaders--user-cheers">
+        {{d-icon "award"}}
+        {{item.total_score}}
+      </span>
+    </div>
+  {{/each}}
+</div>
+
+<a class="leaderboard-leaders--view-all" href="/leaderboard">
+  {{theme-i18n "leaderboard_leaders.view_all"}}
+</a>

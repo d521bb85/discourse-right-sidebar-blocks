@@ -50,6 +50,25 @@
   justify-self: end;
 }
 
+// Leaderboard leaders
+.leaderboard-leaders--user {
+  margin-bottom: 0.5em;
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-template-areas: "left right";
+  grid-column-gap: 1em;
+  cursor: pointer;
+}
+
+.leaderboard-leaders--user-badge {
+  grid-area: left;
+}
+
+.leaderboard-leaders--user-cheers {
+  grid-area: right;
+  justify-self: end;
+}
+
 // Recent replies
 .recent-replies--reply {
   display: flex;

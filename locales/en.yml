@@ -10,3 +10,6 @@ en:
     heading: "Subcategories"
   top_topics:
     heading: "Top topics"
+  leaderboard_leaders:
+    heading: "Leaderboard"
+    view_all: "View all"
